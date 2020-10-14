@@ -1,0 +1,3 @@
+FROM registry.fedoraproject.org/f32/fedora-toolbox:32
+ADD --chown=root:root bin/install-oc-tools.sh /usr/local/bin/
+RUN install-oc-tools.sh
