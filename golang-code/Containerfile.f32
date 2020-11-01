@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/f33/fedora-toolbox:33
+FROM registry.fedoraproject.org/f32/fedora-toolbox:32
 ADD --chown=root:root etc/yum.repos.d/vscode.repo /etc/yum.repos.d/vscode.repo
 RUN sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc && \
     sudo dnf install -y code golang libdrm libgbm libX11-xcb
